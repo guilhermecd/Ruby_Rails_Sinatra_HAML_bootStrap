@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title Mariane Medeiros Page
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %link(rel="stylesheet" href="/estilo.css")    
+  %body        
+    #header
+      %h1= @titulo
+      %h2= @subtitulo
+    #menu
+      %ul
+        %li
+          %a{:href => "/"} About me
+        %li
+          %a{:href => "publications"} Publications
+        %li
+          %a{:href => "research"} Research
+        %li
+          %a{:href => "citations"} Citations
+        %li
+          %a{:href => "contact"} Contact        
+    #content
+      = yield
+    #footer
+      %p
+        Copyleft 2017

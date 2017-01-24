@@ -1,0 +1,16 @@
+%p
+  Nosso telefone é (XX) YYY-ZZZZ, mas se já é um cliente cadastrado, pode fazer seu pedido pelo formulário abaixo:
+%form(action='mailto:gerente@pizzaria.pizza.br?Subject=Pedido' method='post')
+  %fieldset
+    %ul(style='list-style: none')
+      %li
+        %label(for="login") ID_Cliente:
+        %input(type="text" name="login")
+      %li
+        %label(for="pass") Senha:
+        %input(type="password" name="pass")
+      %li
+        %label(for="pedido") Pedido:
+        %textarea(name="pedido")
+      %li
+        %input(type="submit" value="Enviar")
