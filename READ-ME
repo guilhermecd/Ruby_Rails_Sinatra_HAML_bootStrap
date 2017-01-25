@@ -1,0 +1,24 @@
+Simple site development in ruby with Sinatra and HAML.
+
+Operating requirements:
+ruby (ruby1.9.1-full or more)
+build-essential
+gem -> sinatra, thin and haml
+
+How to install in linux (ubunu, debian or derivatives):
+
+	# sudo apt-get install ruby1.9.1-full
+	# sudo apt-get install build-essential
+	# sudo gem install sinatra thin haml 
+
+The last command may take a while.
+
+
+How to execute:
+* clone this repository, with a following command:
+	# git clone https://github.com/guilhermecd/Ruby_Rails_Sinatra_HAML_bootStrap.git
+* enter the folder that was cloned:
+	# cd Ruby_Rails_Sinatra_HAML_bootStrap/
+* and execute the file "hello.rb":
+	# ruby hello.rb
+* open your browser and enter this addres -> localhost:4567
