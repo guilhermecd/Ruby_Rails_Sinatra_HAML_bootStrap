@@ -4,24 +4,81 @@
     %title Mariane Medeiros Page
     %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
     %link(rel="stylesheet" href="/estilo.css")    
-  %body        
-    #header
-      %h1= @titulo
-      %h2= @subtitulo
-    #menu
-      %ul
-        %li
-          %a{:href => "/"} About me
-        %li
-          %a{:href => "publications"} Publications
-        %li
-          %a{:href => "research"} Research
-        %li
-          %a{:href => "citations"} Citations
-        %li
-          %a{:href => "contact"} Contact        
-    #content
-      = yield
-    #footer
-      %p
+    %link(rel="stylesheet" href="/bootstrap/css/bootstrap.css")
+    %link(rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css")  
+    %link(rel="stylesheet" href="/bootstrap/css/bootstrap.js")
+    %link(rel="stylesheet" href="/bootstrap-social-gh-pages/bootstrap-social.css")
+    %link(rel="stylesheet" href="/bootstrap-social-gh-pages/assets/css/bootstrap.css")
+    %link(rel="stylesheet" href="/bootstrap-social-gh-pages/assets/css/font-awesome.css")    
+
+  %body    
+    %section.container   
+      #header
+        %a{:href => "/"}
+          %h1= @titulo
+          %h2= @subtitulo
+      #menu
+        %ul.nav.nav-pills
+          %li
+            %a{:href => "/"} About me
+          %li
+            %a{:href => "publications"} Publications
+          %li
+            %a{:href => "research"} Research
+          %li
+            %a{:href => "citations"} Citations
+          %li
+            %a{:href => "contact"} Contact        
+      #content
+        = yield
+      #aside
+        %h2 News
+        %ul
+          %li
+            %a{:href => "#"} Oh I do like to be beside the seaside
+          %li
+            %a{:href => "#"} Oh I do like to be beside the sea
+          %li
+            %a{:href => "#"} Although in the North of England
+          %li
+            %a{:href => "#"} It never stops raining
+          %li
+            %a{:href => "#"} Oh well...
+      #footer
+        %hr
+        %p
+          Reach me:
+          %p.btn.btn-social-icon.btn-github
+            %a{ :href => "https://github.com/marianemedeiros", :title => "github", :target => "_blank" }
+            %span.fa.fa-github
+
+            %p.btn.btn-social-icon.btn-twitter 
+              %a{ :href => "https://twitter.com", :title => "Twitter", :target => "_blank" }
+              %span.fa.fa-twitter  
+
+              %p.btn.btn-social-icon.btn-google
+                %a{ :href => "https://plus.google.com/102254154409327748446", :title => "G+", :target => "_blank" } 
+                %span.fa.fa-google    
+                
+          %p.btn.btn-social-icon.btn-linkedin 
+            %a{ :href => "https://www.linkedin.com/in/mariane-medeiros-b06845102", :title => "Linkedin", :target => "_blank" }
+            %span.fa.fa-linkedin   
+
+            %p.btn.btn-social-icon.btn-facebook
+              %a{ :href => "https://www.facebook.com/mariane.affonsomedeiros", :title => "Facebook", :target => "_blank" }          
+              %span.fa.fa-facebook      
+
+              %p.btn.btn-social-icon.btn-instagram 
+                %a{ :href => "https://www.instagram.com/mariane_affonso/", :title => "G+", :target => "_blank" } 
+                %span.fa.fa-instagram    
+      #footer2
+        %hr
+        #contact
+          %strong 
+            Project management: Guilherme Diniz © 2017 
+            %p
+              Contact: (44) 99924-1168
+              %p.btn.btn-social-icon.btn-facebook
+                %a{ :href => "https://www.facebook.com/guilherme.castrodiniz", :title => "Facebook", :target => "_blank" }          
+                %span.fa.fa-facebook  
         Copyleft 2017
