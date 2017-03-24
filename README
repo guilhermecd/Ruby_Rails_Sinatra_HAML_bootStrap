@@ -5,7 +5,7 @@ ruby (ruby1.9.1-full or more)
 build-essential
 gem -> sinatra, thin and haml
 
-How to install in linux (ubunu, debian or derivatives):
+How to install in linux (Ubuntu, Debian or derivatives):
 
 	# sudo apt-get install ruby1.9.1-full
 	# sudo apt-get install build-essential
@@ -21,4 +21,4 @@ How to execute:
 	# cd Ruby_Rails_Sinatra_HAML_bootStrap/
 * and execute the file "hello.rb":
 	# ruby hello.rb
-* open your browser and enter this addres -> localhost:4567
+* open your browser and enter this address -> localhost:4567
