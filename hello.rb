@@ -4,31 +4,31 @@ require 'sinatra'
 set :bind, '0.0.0.0'
 
 get '/' do
-  @titulo = "Mariane Medeiros, MSc"
-  @subtitulo = "Mestrando, UEM-Brazil"
+  @titulo = "Guilherme Castro Diniz"
+  @subtitulo = "Ciência da Computação"
   haml :index
 end
 
 get '/publications' do
-  @titulo = "Mariane Medeiros, MSc"
-  @subtitulo = "Mestrando, UEM-Brazil"
+  @titulo = "Guilherme Castro Diniz"
+  @subtitulo = "Ciência da Computação"
   haml :publications
 end
 
 get '/research' do
-  @titulo = "Mariane Medeiros, MSc"
-  @subtitulo = "Mestrando, UEM-Brazil"
+  @titulo = "Guilherme Castro Diniz"
+  @subtitulo = "Ciência da Computação"
   haml :research
 end
 
 get '/citations' do
-  @titulo = "Mariane Medeiros, MSc"
-  @subtitulo = "Mestrando, UEM-Brazil"
+  @titulo = "Guilherme Castro Diniz"
+  @subtitulo = "Ciência da Computação"
   haml :citations
 end
 
 get '/contact' do
-  @titulo = "Mariane Medeiros, MSc"
-  @subtitulo = "Mestrando, UEM-Brazil"
+  @titulo = "Guilherme Castro Diniz"
+  @subtitulo = "Ciência da Computação"
   haml :contact
 end
